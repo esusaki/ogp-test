@@ -20,6 +20,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+  <title>Hello world</title>
+  <meta
+    property="og:image"
+    content="https://og-examples.vercel.sh/api/static"
+  />
+</head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
