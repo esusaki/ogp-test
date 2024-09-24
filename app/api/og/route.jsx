@@ -7,18 +7,18 @@ export async function GET() {
     (
       <div
         style={{
-          fontSize: 40,
-          color: 'black',
-          background: 'white',
+          fontSize: 50,
+          color: 'white',
+          background: 'red',
           width: '100%',
           height: '100%',
-          padding: '50px 200px',
+          padding: '50px 100px',
           textAlign: 'center',
           justifyContent: 'center',
           alignItems: 'center',
         }}
       >
-        👋 Hello
+          おまつりでい！
       </div>
     ),
     {
