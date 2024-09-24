@@ -2,7 +2,8 @@ import { ImageResponse } from 'next/og';
 // App router includes @vercel/og.
 // No need to install it.
  
-export async function GET() {
+export async function GET(req, {params}) {
+  const {text} = params;
   return new ImageResponse(
     (
       <div
@@ -18,7 +19,7 @@ export async function GET() {
           alignItems: 'center',
         }}
       >
-          おまつりでい！
+          {text}
       </div>
     ),
     {
