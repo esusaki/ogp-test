@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-  <title>Hello world</title>
+  <title>こんにちはー</title>
   <meta
     property="og:image"
     content="https://og-examples.vercel.sh/api/static"
