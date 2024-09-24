@@ -18,7 +18,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const ogpAPIURL = "https://ogp-test-omega.vercel.app/api/og?text="+"hello!"
+  const ogpAPIURL = "https://ogp-test-omega.vercel.app/api/og/"+"わっしょい"
   return (
     <html lang="en">
       <head>
