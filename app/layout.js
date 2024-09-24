@@ -24,7 +24,8 @@ export default function RootLayout({ children }) {
   <title>こんにちはー</title>
   <meta
     property="og:image"
-    content="https://og-examples.vercel.sh/api/static"
+    // content="https://og-examples.vercel.sh/api/static"
+    content="https://ogp-test-omega.vercel.app/api/og"
   />
 </head>
       <body
