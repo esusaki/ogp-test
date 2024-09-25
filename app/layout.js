@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
   console.log(ogpAPIURL);
 
   return (
-    <html lang="en">
+    <html lang="ja">
       <head>
   <title>こんにちはー</title>
   <meta

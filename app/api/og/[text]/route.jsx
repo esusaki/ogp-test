@@ -8,12 +8,12 @@ export async function GET(req, {params}) {
     (
       <div
         style={{
-          fontSize: 50,
+          fontSize: 100,
           color: 'white',
           background: 'red',
           width: '100%',
           height: '100%',
-          padding: '50px 100px',
+          padding: '20px 30px',
           textAlign: 'center',
           justifyContent: 'center',
           alignItems: 'center',
