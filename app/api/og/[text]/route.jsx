@@ -8,7 +8,7 @@ export async function GET(req, {params}) {
     (
       <div
         style={{
-          fontSize: 100,
+          fontSize: "100px",
           color: 'white',
           background: 'red',
           width: '100%',
