@@ -8,7 +8,6 @@ export async function GET(req, {params}) {
     (
       <div
         style={{
-          fontSize: "100px",
           color: 'white',
           background: 'red',
           width: '100%',
@@ -17,10 +16,10 @@ export async function GET(req, {params}) {
           textAlign: 'center',
           justifyContent: 'center',
           alignItems: 'center',
-          fontSize: 60
+          fontSize: 200
         }}
       >
-          {text}
+        {text}
       </div>
     ),
     {
