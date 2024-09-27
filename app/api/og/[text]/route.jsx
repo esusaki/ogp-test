@@ -17,6 +17,7 @@ export async function GET(req, {params}) {
           textAlign: 'center',
           justifyContent: 'center',
           alignItems: 'center',
+          fontSize: 60
         }}
       >
           {text}
