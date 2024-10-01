@@ -25,11 +25,6 @@ export default function RootLayout({ children }) {
     <html lang="ja">
       <head>
   <title>こんにちはー</title>
-  {/* <meta
-    property="og:image"
-     content="https://og-examples.vercel.sh/api/static"
-    content= {"https://ogp-test-omega.vercel.app/api/og/わっしょい"}
-  /> */}
 </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
