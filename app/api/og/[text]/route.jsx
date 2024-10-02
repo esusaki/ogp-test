@@ -8,8 +8,8 @@ export async function GET(req, {params}) {
     (
       <div
         style={{
-          color: 'white',
-          background: 'red',
+          color: 'black',
+          background: 'white',
           width: '100%',
           height: '100%',
           padding: '20px 30px',

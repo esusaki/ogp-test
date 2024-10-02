@@ -17,8 +17,9 @@ export default function Aiueo({params}){
 
     return (
         <div>
-            <head>
+            <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
                 <title>OGP sample</title>
+                
                 <meta property="og:title" content="OGP Demo"/>
                 <meta property="og:description" content="OGPの表示の練習です"/>
                 <meta
