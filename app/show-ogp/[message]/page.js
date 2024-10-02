@@ -1,16 +1,22 @@
 'use client'
 import { useEffect } from "react";
 
-export default async function aiueo({params}){
+export default function aiueo({params}){
 
+    useEffect(
+        ()=>{
+            console.log(window)
         if (typeof window !== undefined){
                 window.location.href = '/';
-            }
+            } 
+        }
+    )
+
 
     const {message} = params;
 
     return (
-        <html>
+        <div>
             <head>
                 <title>OGP sample</title>
                 <meta property="og:title" content="OGP Demo"/>
@@ -21,8 +27,8 @@ export default async function aiueo({params}){
                     content= {"https://ogp-test-omega.vercel.app/api/og/" + message}
                 />
             </head>
-            <body>redirecting...</body>
-        </html>
+            <body>リダイレクトしています...</body>
+        </div>
 
     )
 }
