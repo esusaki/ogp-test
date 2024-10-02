@@ -5,10 +5,11 @@ export default function aiueo({params}){
 
     useEffect(
         ()=>{
-            console.log(window)
-        if (typeof window !== undefined){
-                window.location.href = '/';
-            } 
+            const timer = setTimeout(()=>{
+            if (typeof window !== undefined){
+                    window.location.href = '/';
+                } 
+            }, 1000)
         }
     )
 
