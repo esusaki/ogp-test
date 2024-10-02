@@ -1,5 +1,12 @@
+'use client'
+import { useEffect } from "react";
+
 export default async function aiueo({params}){
-    
+
+        if (typeof window !== undefined){
+                window.location.href = '/';
+            }
+
     const {message} = params;
 
     return (
@@ -14,7 +21,7 @@ export default async function aiueo({params}){
                     content= {"https://ogp-test-omega.vercel.app/api/og/" + message}
                 />
             </head>
-            <body>{decodeURI(message)}! </body>
+            <body>redirecting...</body>
         </html>
 
     )
