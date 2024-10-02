@@ -9,7 +9,7 @@ export default function Aiueo({params}){
             if (typeof window !== undefined){
                     window.location.href = '/';
                 } 
-            }, 1000)
+            }, 1)
         }
     )
 
