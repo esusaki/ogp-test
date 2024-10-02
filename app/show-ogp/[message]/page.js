@@ -1,18 +1,6 @@
 'use client'
 import { useEffect } from "react";
 
-export function generateMetaData({params}){
-    const matsuriText = params.matsuriText;
-    
-    return {
-        title:"OGP-Demo-Site",
-        openGraph:{
-            title:"OGP-Demo",
-            description:"OGPの表示の練習です"
-        }
-    }
-}
-
 export default function Aiueo({params}){
 
     useEffect(
@@ -29,7 +17,7 @@ export default function Aiueo({params}){
 
     return (
         <div>
-            {/* <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+            <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
                 <title>OGP sample</title>
                 
                 <meta property="og:title" content="OGP Demo"/>
@@ -41,7 +29,7 @@ export default function Aiueo({params}){
                 />
                 <meta property = "og:image:width" content = "1200"/>
                 <meta property = "og:image:height" content = "630"/>
-            </head> */}
+            </head>
             <body></body>
         </div>
 
