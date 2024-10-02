@@ -1,7 +1,7 @@
 'use client'
 import { useEffect } from "react";
 
-export default function aiueo({params}){
+export default function Aiueo({params}){
 
     useEffect(
         ()=>{
@@ -12,7 +12,6 @@ export default function aiueo({params}){
             }, 1000)
         }
     )
-
 
     const {message} = params;
 
@@ -28,7 +27,7 @@ export default function aiueo({params}){
                     content= {"https://ogp-test-omega.vercel.app/api/og/" + message}
                 />
             </head>
-            <body>リダイレクトしています...</body>
+            <body></body>
         </div>
 
     )
