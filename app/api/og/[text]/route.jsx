@@ -8,6 +8,7 @@ export async function GET(req, {params}) {
     (
       <div
         style={{
+          backgroundImage: "url(https://ogp-test-omega.vercel.app/matsuri-background.png)",
           color: 'black',
           background: 'white',
           width: '100%',
@@ -16,7 +17,7 @@ export async function GET(req, {params}) {
           textAlign: 'center',
           justifyContent: 'center',
           alignItems: 'center',
-          fontSize: 200
+          fontSize: 50
         }}
       >
         {text}
