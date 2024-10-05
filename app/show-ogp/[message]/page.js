@@ -29,6 +29,10 @@ export default function Aiueo({params}){
                 />
                 <meta property = "og:image:width" content = "1200"/>
                 <meta property = "og:image:height" content = "630"/>
+
+                <meta name="twitter:card" content="summary_large_image"/>
+                <meta name="twitter:title" content="textval"/>
+
             </head>
             <body></body>
         </div>
