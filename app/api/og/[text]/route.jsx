@@ -8,7 +8,7 @@ export async function GET(req, {params}) {
     (
       <div
         style={{
-          backgroundImage: "url(https://ogp-test-omega.vercel.app/matsuri-background.png)",
+          backgroundImage: "url(http://localhost:3000/matsuri_background.png)",
           color: 'black',
           background: 'white',
           width: '100%',
