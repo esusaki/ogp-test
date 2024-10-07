@@ -15,7 +15,7 @@ export default function Home() {
           onChange = {(e) => {setText(e.target.value)}}>
         </textarea>
         <button onClick = {()=>{setDisplayText(text);setText("")}}>
-          ボタン
+          OK
         </button>
         
 
@@ -24,7 +24,7 @@ export default function Home() {
               :<div style={{"padding":"10px","background":"#eee","margin":"10px"}}>
                   {displayText}
                   <div>
-                  <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text={'文章をお祭り翻訳する"textval"で翻訳しました！'} data-url={encodeURI("https://ogp-test-omega.vercel.app/show-ogp/" + displayText)} data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                  <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text={'textvalでお祭り翻訳しました！'} data-url={encodeURI("https://ogp-test-omega.vercel.app/show-ogp/" + displayText)} data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
               </div></div>
             }
     </div>
