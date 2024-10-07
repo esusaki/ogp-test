@@ -1,14 +1,16 @@
 import { ImageResponse } from 'next/og';
+import fs from "fs";
+import { NextRequest } from 'next/server';
+import path from 'path';
 // App router includes @vercel/og.
 // No need to install it.
 
-const font = fetch(
-  new URL("/assets/Kouzan.ttf", import.meta.url)
-).then((res) => res.arrayBuffer());
- 
 export async function GET(req, {params}) {
   const {text} = params;
-  const fontData = await font;
+
+const fontPath = path.join(process.cwd(), 'app', 'fonts', 'Kouzan.ttf');
+const fontData = fs.readFileSync(fontPath);
+
   return new ImageResponse(
     (
       <div
@@ -34,9 +36,8 @@ export async function GET(req, {params}) {
       height: 630,
       fonts : [
         {
-          name : "Kouzan",
-          data : fontData,
-          style : "normal"
+          name : "KouzanBrushFont",
+          data : fontData
         }
       ]
     },
