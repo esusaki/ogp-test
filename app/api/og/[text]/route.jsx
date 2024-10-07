@@ -6,7 +6,12 @@ import path from 'path';
 // No need to install it.
 
 export async function GET(req, {params}) {
-  const {text} = params;
+  var {text} = params;
+
+  if (text.length > 90){
+    text = text.slice(0,90);
+    text = text + "...";  
+  }
 
 const fontPath = path.join(process.cwd(), 'app', 'fonts', 'Kouzan.ttf');
 const fontData = fs.readFileSync(fontPath);
@@ -25,7 +30,7 @@ const fontData = fs.readFileSync(fontPath);
           justifyContent: 'center',
           alignItems: 'center',
           fontFamily:'"Kouzan"',
-          fontSize: 50
+          fontSize: 60
         }}
       >
         {text}
