@@ -1,11 +1,30 @@
 "use client"
 
 import {useState} from "react";
+import kuromoji from "kuromoji";
 
 export default function Home() {
 
   const [text, setText] = useState("");
   const [displayText, setDisplayText] = useState("");
+
+  function convertText(userInput){
+    setText(text)
+
+    kuromoji.builder(
+      {dicPath : "dict/"}
+    ).build((err, tokenizer) => {
+      const tokens = tokenizer.tokenize(userInput);
+
+      var result = "";
+
+      for (var i = 0; i < tokens.length; i++){
+        result += `${tokens[i].surface_form} (${tokens[i].pos})`
+      }
+      
+      setDisplayText(result)
+    })  
+  }
 
   return (
     <div>
@@ -14,10 +33,9 @@ export default function Home() {
           value = {text}
           onChange = {(e) => {setText(e.target.value)}}>
         </textarea>
-        <button onClick = {()=>{setDisplayText(text);setText("")}}>
+        <button onClick = {()=>{convertText(text)}}>
           OK
         </button>
-        
 
           { displayText === "" 
               ? "" 
